@@ -1,0 +1,67 @@
+/* press-me.css - только анимации пальцев */
+
+/* Контейнеры для пальцев */
+.finger-container {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+    overflow: visible;
+    aspect-ratio: 1 / 1; /* сохраняем квадратную форму для правильного масштаба */
+}
+
+/* Стили для самих картинок пальцев */
+.finger-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transform: scale(0.2);
+    transform-origin: top left;
+}
+
+/* Анимация для первого пальца (зона 1) */
+#finger1 {
+    animation: finger1 10s infinite;
+}
+
+@keyframes finger1 {
+    0% { opacity: 0; }
+    7.5% { opacity: 1; }
+    15% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+/* Анимация для второго пальца (зона 2) */
+#finger2 {
+    animation: finger2 10s infinite;
+}
+
+@keyframes finger2 {
+    15% { opacity: 0; }
+    22.5% { opacity: 1; }
+    30% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+/* Анимация для третьего пальца (зона 3) */
+#finger3 {
+    animation: finger3 10s infinite;
+}
+
+@keyframes finger3 {
+    30% { opacity: 0; }
+    37.5% { opacity: 1; }
+    45% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+/* Анимация для четвёртого пальца (зона 4) */
+#finger4 {
+    animation: finger4 10s infinite;
+}
+
+@keyframes finger4 {
+    45% { opacity: 0; }
+    52.5% { opacity: 1; }
+    60% { opacity: 0; }
+    100% { opacity: 0; }
+}

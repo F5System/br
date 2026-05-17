@@ -1,0 +1,43 @@
+/* style.css - только ваши стили сайта, без Fancybox */
+
+body {
+    background-color: #000000;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    overflow: hidden; /* отключаем ВСЮ прокрутку */
+    position: fixed; /* фиксируем body, чтобы нельзя было скроллить */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+.container {
+    position: relative;
+    display: inline-block;
+    width: auto;
+    max-width: 100vw;
+    max-height: 100vh;
+    overflow: hidden;
+}
+
+/* Основное фоновое изображение (index.png) */
+.bg-img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
+
+/* Накладываемые изображения (дизайн + свечение) */
+.overlay-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto; /* теперь высота автоматическая, как у bg-img */
+    pointer-events: none;
+}
